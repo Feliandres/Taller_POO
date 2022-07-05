@@ -23,13 +23,14 @@ public class FloatDouble {
         this.var_double = var_double;
     }
 
-    public void TransformarFloat (int var_double){
+    public void TransformarFloatDouble (int var_double){
         this.var_double = (double) var_float;
     }
 
     @Override
     public String toString() {
-        return "Valor del float: "+var_float+"\n"+
+        return  "Pasar de float a double: "+"\n"+
+                "Valor del float: "+var_float+"\n"+
                 "Valor del double: "+var_double;
     }
 }

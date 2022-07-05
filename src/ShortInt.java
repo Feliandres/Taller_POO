@@ -23,13 +23,14 @@ public class ShortInt {
         this.entero = entero;
     }
 
-    public void TransformarShort (int entero){
+    public void TransformarShortInt (int entero){
         this.entero = (int) short1;
     }
 
     @Override
     public String toString() {
-        return "Valor del short: "+short1+"\n"+
+        return  "Pasar de short a entero: "+"\n"+
+                "Valor del short: "+short1+"\n"+
                 "Valor del entero: "+entero;
     }
 

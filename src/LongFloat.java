@@ -23,13 +23,14 @@ public class LongFloat {
         this.var_float = var_float;
     }
 
-    public void TransformarLong(int var_float){
+    public void TransformarLongFloat(int var_float){
         this.var_float = (float) var_long;
     }
 
     @Override
     public String toString() {
-        return "Valor del float: "+var_float+"\n"+
+        return  "Pasar de long a float: "+"\n"+
+                "Valor del float: "+var_float+"\n"+
                 "Valor del long: "+var_long;
     }
 }
