@@ -5,11 +5,36 @@ public class Main {
     public static void main(String[] args) {
         // Mostrar un dialogo
         JOptionPane.showMessageDialog(null,"Bienvenidos");
-        // Pedir datos a travez de una interfaz grafica
-        JOptionPane.showInputDialog(null, "Introduzca un dato: ");
-        int numero1 = Integer.parseInt(JOptionPane.showInputDialog(null, "Introduzca el primer numero: ","Calculando",JOptionPane.QUESTION_MESSAGE));
-        int numero2 = Integer.parseInt(JOptionPane.showInputDialog(null, "Introduzca el segundo numero: ","Calculando",JOptionPane.QUESTION_MESSAGE));
-        int total = numero1 + numero2;
-        JOptionPane.showMessageDialog(null,"El resultado es: "+total,"Sumando",JOptionPane.INFORMATION_MESSAGE);
+        //Menú de transformaciones
+        int opc = 1;
+        while (opc!=6){
+            opc = Integer.parseInt(JOptionPane.showInputDialog(null, "Menú de transformaciones:\n1. De byte a short\n2. De short a int\n3. De int a long\n4. De long a float\n5. De float a double\n6. Salir","Calculando",JOptionPane.QUESTION_MESSAGE));
+
+            switch (opc){
+                case 1:
+                    short num_short = 0;
+                    byte num_byte = Byte.parseByte(JOptionPane.showInputDialog(null, "Ingresa el tipo de dato byte:","De byte a short",JOptionPane.QUESTION_MESSAGE));
+                    Byte_Short byteToShort = new Byte_Short(num_byte, num_short);
+                    byteToShort.ConvertirByteShort(num_short);
+                    JOptionPane.showMessageDialog(null,byteToShort.toString(),"Mostrando byte a short",JOptionPane.INFORMATION_MESSAGE);
+                    break;
+                case 2:
+
+                    break;
+                case 3:
+
+                    break;
+                case 4:
+
+                    break;
+                case 5:
+
+                    break;
+            }
+
+
+
+        }
+        
     }
 }
