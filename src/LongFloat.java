@@ -23,7 +23,7 @@ public class LongFloat {
         this.var_float = var_float;
     }
 
-    public void TransformarLongFloat(int var_float){
+    public void TransformarLongFloat(float var_float){
         this.var_float = (float) var_long;
     }
 

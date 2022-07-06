@@ -23,8 +23,8 @@ public class EnteroLong {
         this.var_long = var_long;
     }
 
-    public void ConvertirEnteroLong (short var_long){
-        this.var_long = (short)var_entero ;
+    public void ConvertirEnteroLong (long var_long){
+        this.var_long = (long)var_entero ;
     }
 
     @Override

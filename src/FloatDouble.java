@@ -23,7 +23,7 @@ public class FloatDouble {
         this.var_double = var_double;
     }
 
-    public void TransformarFloatDouble (int var_double){
+    public void TransformarFloatDouble (double var_double){
         this.var_double = (double) var_float;
     }
 

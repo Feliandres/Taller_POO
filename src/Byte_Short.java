@@ -1,5 +1,4 @@
 public class Byte_Short {
-
     private byte var_byte;
     private short var_short;
 
@@ -31,8 +30,8 @@ public class Byte_Short {
 
     @Override
     public String toString() {
-    return  "Pasar de byte a short: "+"\n"+
-            "Valor de byte: "+var_byte+"\n"+
-            "Valor de short: "+var_short;
+        return  "Pasar de byte a short: "+"\n"+
+                "Valor de byte: "+var_byte+"\n"+
+                "Valor de short: "+var_short;
     }
 }

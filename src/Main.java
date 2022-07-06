@@ -1,6 +1,5 @@
 import javax.swing.*;
-import java.util.ArrayList;
-import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Mostrar un dialogo
@@ -19,22 +18,38 @@ public class Main {
                     JOptionPane.showMessageDialog(null,byteToShort.toString(),"Mostrando byte a short",JOptionPane.INFORMATION_MESSAGE);
                     break;
                 case 2:
-
+                    int num_int = 0;
+                    short num_short1 = Byte.parseByte(JOptionPane.showInputDialog(null, "Ingresa el tipo de dato short:","De short a int",JOptionPane.QUESTION_MESSAGE));
+                    ShortInt shortToInt = new ShortInt(num_short1, num_int);
+                    shortToInt.TransformarShortInt(num_int);
+                    JOptionPane.showMessageDialog(null,shortToInt.toString(),"Mostrando short a int",JOptionPane.INFORMATION_MESSAGE);
                     break;
                 case 3:
-
+                    long num_long = 0;
+                    int num_int1 = Byte.parseByte(JOptionPane.showInputDialog(null, "Ingresa el tipo de dato entero:","De int a long",JOptionPane.QUESTION_MESSAGE));
+                    EnteroLong intToLong = new EnteroLong(num_int1, num_long);
+                    intToLong.ConvertirEnteroLong(num_long);
+                    JOptionPane.showMessageDialog(null,intToLong.toString(),"Mostrando int a long",JOptionPane.INFORMATION_MESSAGE);
                     break;
                 case 4:
-
+                    float num_float = 0;
+                    long num_long1 = Byte.parseByte(JOptionPane.showInputDialog(null, "Ingresa el tipo de dato long:","De long a float",JOptionPane.QUESTION_MESSAGE));
+                    LongFloat longToFloat = new LongFloat(num_long1, num_float);
+                    longToFloat.TransformarLongFloat(num_float);
+                    JOptionPane.showMessageDialog(null,longToFloat.toString(),"Mostrando long a float",JOptionPane.INFORMATION_MESSAGE);
                     break;
                 case 5:
-
+                    double num_double = 0;
+                    float num_float1 = Byte.parseByte(JOptionPane.showInputDialog(null, "Ingresa el tipo de dato float:","De float a double",JOptionPane.QUESTION_MESSAGE));
+                    FloatDouble floatToDouble = new FloatDouble(num_float1, num_double);
+                    floatToDouble.TransformarFloatDouble(num_double);
+                    JOptionPane.showMessageDialog(null,floatToDouble.toString(),"Mostrando float a double",JOptionPane.INFORMATION_MESSAGE);
                     break;
             }
 
 
 
         }
-        
+
     }
 }
