@@ -30,7 +30,7 @@ public class EnteroLong {
     @Override
     public String toString() {
         return  "Pasar de entero a long: "+"\n"+
-                "Valor de byte: "+var_entero+"\n"+
-                "Valor de short: "+var_long;
+                "Valor de entero: "+var_entero+"\n"+
+                "Valor de long: "+var_long;
     }
 }
